@@ -1,0 +1,6 @@
+framework module BloomVideoSDK {
+  umbrella header "BloomVideoSDK.h"
+
+  export *
+  module * { export * }
+}
