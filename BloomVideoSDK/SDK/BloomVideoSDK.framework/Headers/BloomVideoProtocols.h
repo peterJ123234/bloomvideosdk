@@ -39,10 +39,14 @@
 // 播放器状态回调
 - (void)bmv_playerOnPrepare:(id<BloomVideoPlayerProtocol>)player;
 - (void)bmv_playerOnPlaying;
+- (void)bmv_playerOnProgress:(CGFloat)progress duration:(CGFloat)duration;
 - (void)bmv_playerOnPause;
 - (void)bmv_playerOnStop;
 - (void)bmv_playerPlayFinished;
 - (void)bmv_playerPlayError:(NSError *)error;
+
+// 播放广告视频回调
+- (void)bmv_playerDidPlayVideoAd:(NSDictionary *)adInfo;
 
 @end
 
