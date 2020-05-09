@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BloomVideoSDKApi : NSObject
 
 /**
- * SDK版本 1.0.2(1)
+ * SDK版本 1.0.2(2)
  */
 + (NSString *)sdkVersion;
 
