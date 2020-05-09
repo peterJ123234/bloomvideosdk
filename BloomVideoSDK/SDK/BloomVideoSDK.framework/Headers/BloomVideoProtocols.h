@@ -36,7 +36,7 @@
 // 返回播放器上层的工具视图
 - (UIView *)bmv_playerToolViewForInfo:(NSDictionary *)video;
 
-// 播放器状态回调
+// 普通视频回调
 - (void)bmv_playerOnPrepare:(id<BloomVideoPlayerProtocol>)player;
 - (void)bmv_playerOnPlaying;
 - (void)bmv_playerOnProgress:(CGFloat)progress duration:(CGFloat)duration;
@@ -45,8 +45,12 @@
 - (void)bmv_playerPlayFinished;
 - (void)bmv_playerPlayError:(NSError *)error;
 
-// 播放广告视频回调
-- (void)bmv_playerDidPlayVideoAd:(NSDictionary *)adInfo;
+// 广告视频回调
+- (void)bmv_ad_playerOnPrepare:(NSDictionary *)adInfo;
+- (void)bmv_ad_playerOnPlaying;
+- (void)bmv_ad_playerOnPause;
+- (void)bmv_ad_playerPlayFinished;
+- (void)bmv_ad_playerPlayError:(NSError *)error;
 
 @end
 

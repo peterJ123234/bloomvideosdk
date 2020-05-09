@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BloomVideoSDK'
-  s.version          = '1.0.1.11'
+  s.version          = '1.0.2.11'
   s.summary          = 'A short video sdk with Ads'
 
 # This description is used to generate tags and improve search results.
