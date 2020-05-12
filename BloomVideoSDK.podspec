@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BloomVideoSDK'
-  s.version          = '1.0.2.21'
+  s.version          = '1.0.3.11'
   s.summary          = 'A short video sdk with Ads'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ A short video sdk with Ads.
   
   s.vendored_frameworks = 'BloomVideoSDK/SDK/BloomVideoSDK.framework'
   
-  s.dependency 'AFNetworking', '~> 3.2.1'
+  s.dependency 'AFNetworking'
   s.dependency 'MJExtension'
   s.dependency 'ReactiveObjC', '3.0.0'
 end
